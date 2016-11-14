@@ -6,7 +6,7 @@
 }
 
 #MainImage {
-	background: url(https://github.com/Tier-Zero/Tier-Zero.github.io/blob/master/images/Tampa_1.jpg) 50% fixed;
+	background: url(https://github.com/Tier-Zero/Tier-Zero.github.io/blob/master/images/Tampa_1.jpg?raw=true) 50% fixed;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-position: 0px 0px;
