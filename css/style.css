@@ -1,11 +1,13 @@
-.navbar {
+.navbar-default 
+{
   background-color: white;
   border-color: white;
   padding: 0px;
   font-size: 15px;
 }
 
-#MainImage {
+#MainImage 
+{
 	background: url(https://github.com/Tier-Zero/Tier-Zero.github.io/blob/master/images/Tampa_2.png?raw=true) 50% fixed;
 	background-attachment: fixed;
   background-repeat: no-repeat;
