@@ -80,28 +80,4 @@
   margin-left: 5px;
 }
 
-.portfolio-items-container {
-	position: relative;
-	display: block;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-
-.portfolio-items-container .portfolio-item {
-	display: block;
-	list-style: none;
-	overflow: hidden;
-	width: 25%;
-	width: 33.333%;
-	padding: 20px;
-  
-}
-
-.portfolio-items-container .portfolio-item img {
-	display: block;
-	width: 50%;
-	height: auto;
-  box-shadow: 10px 10px 5px grey;
-}
 
