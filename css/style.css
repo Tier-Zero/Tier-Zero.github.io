@@ -42,10 +42,12 @@
 .module-header
 {
   text-align: center;
+  font-size: 20px;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 60px;
   margin-left: 0px;
+  color: #1ba1e2
 }
 
 #filter
