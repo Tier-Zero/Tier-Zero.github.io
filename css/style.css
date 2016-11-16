@@ -81,16 +81,3 @@
   margin-left: 5px;
 }
 
-div.polaroid 
-{
-  width: 150px;
-  box-shadow: 10px 10px 5px gray;
-  text-align: center;
-}
-
-div.container {
-  padding: 10px;
-  color: #1ba1e2;
-  font-size: 15px;
-}
-
