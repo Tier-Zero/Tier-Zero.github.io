@@ -80,4 +80,12 @@
   margin-left: 5px;
 }
 
+.image
+{
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  box-shadow: 10px 10px 5px gray;
+}
 
