@@ -93,6 +93,7 @@
 	width: 25%;
 	width: 33.333%;
 	padding: 20px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .portfolio-items-container .portfolio-item img {
