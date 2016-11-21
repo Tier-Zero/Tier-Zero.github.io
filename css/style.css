@@ -80,6 +80,7 @@
   margin-right: 5px;
   margin-bottom: 5px;
   margin-left: 5px;
+  box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
 }
 
 .navbar-default .navbar-nav > li > a
