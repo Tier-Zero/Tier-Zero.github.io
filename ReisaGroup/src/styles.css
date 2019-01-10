@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-
-body {
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../m-modified.css';
+* {
     font-family: Open Sans;
+}
+
+body { 
+    overflow: hidden;
+    height: 100vh;
 }

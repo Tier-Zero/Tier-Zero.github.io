@@ -1,11 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
-@font-face {
-    font-family: "OpenSans";
-    src: url("../assets/fonts/OpenSans/OpenSans-Light.ttf") format('ttf');
+#link {
+    background-color: transparent;
+    padding: 17px;
+    margin: 0;
+    font-size: 17px;
 }
 
-body {
-    font-family: OpenSans;
-    height: 100%;
-    overflow: hidden;
+#link:hover, #link.active {
+    background-color: #eeeeee;
+    color: #bd3736;
+    transition: all .5s;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+}
+
+a {
+    text-decoration: unset;
+    color: #FFF;
+}
+
+#navRow { 
+    padding: 0;
+    margin: 0;
+    background-color: #bd3736;
+    color: #FFF;
+}
+
+.mat-toolbar {
+    background-color: #eeeeee;
+    color: #FFF;
+    z-index: 99999;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}
+
+.tag {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    background-color: #bd3736;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    background-color: #FFF;
+    width: 100%;
+    padding: 2.5px;
+    text-align: center;
+    color: #bd3736;
+    height: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        height: 150px;
+        text-align: center;
+        background-color: #fafafa;
+    }
+    
+    .banner-text {
+        margin-top: 30px;
+        font-size: 22px;
+    }
 }
