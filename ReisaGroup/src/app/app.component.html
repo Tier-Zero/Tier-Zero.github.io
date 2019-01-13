@@ -1,9 +1,9 @@
 <mat-toolbar>
   <mat-toolbar-row id="logoRow">
-      <a routerLink="/home" routerLinkActive="active" style="padding: 5px; margin-top: 5px;"><img src="../assets/images/logo.png" style="height: 55px;"></a>
+      <a routerLink="/home" routerLinkActive="active" style="padding: 0px; margin-top: 5px;"><img src="../assets/images/logo.png" style="height: 40px;"></a>
   </mat-toolbar-row>
   <mat-toolbar-row id="navRow">
-    <a id="link" *ngFor="let nav of navigation" routerLink="{{ nav.path }}" routerLinkActive="active">{{ nav.name }}</a>    
+    <a id="link" *ngFor="let nav of navigation" routerLink="{{ nav.path }}" routerLinkActive="active">{{ nav.name }}</a>
   </mat-toolbar-row>
 </mat-toolbar>
 
@@ -11,7 +11,7 @@
 
 <div class="footer">
   <p class="tag">{{ tag }}</p>
-  <div class="footer-content">
+  <div class="footer-content" style="background-color: #FFF;">
     <p style="margin: 0;">Website Copyright @ 2019 TierZero | Contents Copyright @ 2019 The Reisa Group</p>
   </div>
 </div>

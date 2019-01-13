@@ -1,8 +1,9 @@
 #link {
     background-color: transparent;
-    padding: 17px;
+    padding: 5px;
     margin: 0;
-    font-size: 17px;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 #link:hover, #link.active {
@@ -17,9 +18,14 @@ a {
     color: #FFF;
 }
 
+#logoRow {
+    height: 45px;
+}
+
 #navRow { 
     padding: 0;
     margin: 0;
+    height: 40px;
     background-color: #bd3736;
     color: #FFF;
 }
@@ -33,14 +39,15 @@ a {
 
 .tag {
     margin: 5px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .footer {
-    height: 100px;
+    height: 62px;
     width: 100%;
     text-align: center;
     color: #FFF;
+    z-index: 999;
     background-color: #bd3736;
     position: fixed;
     bottom: 0;

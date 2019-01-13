@@ -33,7 +33,7 @@ export class AppComponent {
     },
     {
       name: 'Endorsements',
-      path: '/endorsements'
+      path: '/endorse'
     },
     {
       name: 'Job Postings',

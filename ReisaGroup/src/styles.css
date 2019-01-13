@@ -10,3 +10,28 @@ body {
     overflow: hidden;
     height: 100vh;
 }
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #bd3736;
+}
+
+#info-section, #detail-section {
+    padding: 10px;
+    height: calc(100vh - 150px);
+}
+
+p {
+    font-size: 13px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;  /* rem[ove scrollbar space */
+    border-radius: 0px;
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    /* background-color: #00ACC1 !important; */
+    border-radius: 0px;
+    background-color: #bd3736;
+}

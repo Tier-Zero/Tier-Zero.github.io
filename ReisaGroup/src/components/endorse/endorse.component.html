@@ -1,0 +1,29 @@
+<div class="view">
+    <div class="row">
+        <div class="col m2 s0" id="info-section">
+            <div class="info">
+                <br>
+                <p id="info-text">We are in business to serve our clients and our attitude conveys this always</p>
+                <hr>
+                <p id="info-text">We have built and will continue to build a reputation of honesty, integrity, and fairness in dealing with all of our clients.</p>
+                <hr>
+                <p id="info-text">Our team members find satisfaction and enjoyment in their work. This provides for added value in our services</p>
+                <hr>
+                <p id="info-text">Every team member at The Reisa Group has something valuable to contribute. No member is more important than another, and everyone needs each other</p>
+            </div>
+        </div>
+        <div class="col m10 s12" id="detail-section">
+            <mat-tab-group>
+                <mat-tab label="Endorsements">
+                    <div class="detail">
+                        <div class="detail-item" *ngFor="let item of endorsements">
+                            <p style="text-align: left;">{{ item.company }}</p>
+                            <p>"{{ item.qoute }}"</p>
+                            <p>{{ item.person }}</p>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+</div>
