@@ -20,6 +20,10 @@ body {
     height: calc(100vh - 150px);
 }
 
+.mat-tab-body.mat-tab-body-active {
+    height: calc(100vh - 200px);
+}
+
 p {
     font-size: 13px;
 }

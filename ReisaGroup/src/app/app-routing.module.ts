@@ -6,6 +6,7 @@ import { HomeComponent } from '../components/home/home.component';
 import { StoryComponent } from '../components/story/story.component';
 import { ServiceComponent } from '../components/service/service.component';
 import { EndorseComponent } from '../components/endorse/endorse.component';
+import { PlacementComponent } from '../components/placement/placement.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'endorse',
     component: EndorseComponent
+  },
+  {
+    path: 'placement',
+    component: PlacementComponent
   }
 ];
 

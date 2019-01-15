@@ -41,7 +41,7 @@ export class AppComponent {
     },
     {
       name: 'Placements',
-      path: '/placements'
+      path: '/placement'
     },
     {
       name: 'Contact',

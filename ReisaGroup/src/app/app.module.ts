@@ -10,6 +10,7 @@ import { HomeComponent } from '../components/home/home.component';
 import { StoryComponent } from '../components/story/story.component';
 import { ServiceComponent } from '../components/service/service.component';
 import { EndorseComponent } from '../components/endorse/endorse.component';
+import { PlacementComponent } from '../components/placement/placement.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
@@ -22,7 +23,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     HomeComponent,
     StoryComponent,
     ServiceComponent,
-    EndorseComponent
+    EndorseComponent,
+    PlacementComponent
   ],
   imports: [
     BrowserModule,
