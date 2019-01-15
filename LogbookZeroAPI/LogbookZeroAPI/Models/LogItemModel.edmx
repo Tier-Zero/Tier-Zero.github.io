@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LogbookZeroModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="LogItems">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="FlightDate" Type="date" />
+          <Property Name="AircraftType" Type="nvarchar" MaxLength="50" />
+          <Property Name="AircraftRegistration" Type="nvarchar" MaxLength="10" />
+          <Property Name="Position" Type="varchar" MaxLength="25" />
+          <Property Name="FromCode" Type="varchar" MaxLength="4" />
+          <Property Name="ToCode" Type="varchar" MaxLength="4" />
+          <Property Name="SingleEngineDayPilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="SingleEngineDayDual" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="SingleEngineNightPilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="SingleEngineNightDual" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineDayPilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineDayDual" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineDayCopilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineNightPilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineNightDual" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineNightCopilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryDayPilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryDayDual" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryNightPilot" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryNightDual" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="InstrumentHood" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="InstrumentCloud" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="InstrumentSim" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="LogbookZeroModel1StoreContainer">
+          <EntitySet Name="LogItems" EntityType="Self.LogItems" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LogbookZeroModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="LogItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FlightDate" Type="DateTime" Precision="0" />
+          <Property Name="AircraftType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AircraftRegistration" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Position" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="FromCode" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="ToCode" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="SingleEngineDayPilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SingleEngineDayDual" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SingleEngineNightPilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SingleEngineNightDual" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineDayPilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineDayDual" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineDayCopilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineNightPilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineNightDual" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MultiEngineNightCopilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryDayPilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryDayDual" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryNightPilot" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CrossCountryNightDual" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="InstrumentHood" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="InstrumentCloud" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="InstrumentSim" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="LogbookZeroEntities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="LogItems" EntityType="Self.LogItem" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LogbookZeroModel1StoreContainer" CdmEntityContainer="LogbookZeroEntities4">
+          <EntitySetMapping Name="LogItems">
+            <EntityTypeMapping TypeName="LogbookZeroModel1.LogItem">
+              <MappingFragment StoreEntitySet="LogItems">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="FlightDate" ColumnName="FlightDate" />
+                <ScalarProperty Name="AircraftType" ColumnName="AircraftType" />
+                <ScalarProperty Name="AircraftRegistration" ColumnName="AircraftRegistration" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="FromCode" ColumnName="FromCode" />
+                <ScalarProperty Name="ToCode" ColumnName="ToCode" />
+                <ScalarProperty Name="SingleEngineDayPilot" ColumnName="SingleEngineDayPilot" />
+                <ScalarProperty Name="SingleEngineDayDual" ColumnName="SingleEngineDayDual" />
+                <ScalarProperty Name="SingleEngineNightPilot" ColumnName="SingleEngineNightPilot" />
+                <ScalarProperty Name="SingleEngineNightDual" ColumnName="SingleEngineNightDual" />
+                <ScalarProperty Name="MultiEngineDayPilot" ColumnName="MultiEngineDayPilot" />
+                <ScalarProperty Name="MultiEngineDayDual" ColumnName="MultiEngineDayDual" />
+                <ScalarProperty Name="MultiEngineDayCopilot" ColumnName="MultiEngineDayCopilot" />
+                <ScalarProperty Name="MultiEngineNightPilot" ColumnName="MultiEngineNightPilot" />
+                <ScalarProperty Name="MultiEngineNightDual" ColumnName="MultiEngineNightDual" />
+                <ScalarProperty Name="MultiEngineNightCopilot" ColumnName="MultiEngineNightCopilot" />
+                <ScalarProperty Name="CrossCountryDayPilot" ColumnName="CrossCountryDayPilot" />
+                <ScalarProperty Name="CrossCountryDayDual" ColumnName="CrossCountryDayDual" />
+                <ScalarProperty Name="CrossCountryNightPilot" ColumnName="CrossCountryNightPilot" />
+                <ScalarProperty Name="CrossCountryNightDual" ColumnName="CrossCountryNightDual" />
+                <ScalarProperty Name="InstrumentHood" ColumnName="InstrumentHood" />
+                <ScalarProperty Name="InstrumentCloud" ColumnName="InstrumentCloud" />
+                <ScalarProperty Name="InstrumentSim" ColumnName="InstrumentSim" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
