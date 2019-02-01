@@ -34,25 +34,7 @@ class LandingPageState extends State<LandingPage> {
       ),
       body: new Material(
         color: new Color(0xFF00bcd4),
-        child:new Center(
-          child: new Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Card(
-                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-                elevation: 15,
-                child: new Padding(
-                  padding: EdgeInsets.all(20),
-                  child: new Column(
-                    children: <Widget>[
-                      _options.elementAt(_selectedIndex)
-                    ],
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
+        child: _options.elementAt(_selectedIndex)
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
