@@ -2,16 +2,19 @@ import 'package:flutter/material.dart';
 
 import '../UI/login_ui.dart';
 import '../UI//createAccount_ui.dart';
+import '../UI/landing_ui.dart';
 
-class LoginPage extends StatefulWidget {
+
+class LandingPage extends StatefulWidget {
   @override
-  LoginPageState createState() => LoginPageState();
+  LandingPageState createState() => LandingPageState();
 }
 
-class LoginPageState extends State<LoginPage> {
-  int _selectedIndex = 0;
+class LandingPageState extends State<LandingPage> {
+  int _selectedIndex = 1;
   final _options = [
     new LoginUi(),
+    new LandingUi(),
     new CreateAccountUi()
   ];
 
@@ -42,13 +45,6 @@ class LoginPageState extends State<LoginPage> {
                   padding: EdgeInsets.all(20),
                   child: new Column(
                     children: <Widget>[
-                      Text(
-                        "Please Login or Create an Account",
-                        style: new TextStyle(
-                          fontSize: 17,
-                          color: Colors.black87
-                        )
-                      ),
                       _options.elementAt(_selectedIndex)
                     ],
                   ),
@@ -63,6 +59,10 @@ class LoginPageState extends State<LoginPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.check),
             title: Text("Login")
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.flight_land),
+            title: Text("Landing")
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.create),
