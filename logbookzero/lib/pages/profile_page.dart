@@ -9,7 +9,83 @@ class ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return new Material(
-      child: new Text("Profile", style: new TextStyle(fontSize: 22.0))
+      child: new Padding(
+        padding: EdgeInsets.all(10),
+        child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            new Card(
+              elevation: 5,
+              child: new Padding(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                child: new Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "Cameron Stark",
+                      style: new TextStyle(
+                        fontSize: 23
+                      )
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 2),
+                    ),
+                    Text(
+                      "Total Hours: ",
+                      style: new TextStyle(
+                        fontSize: 19
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 2),
+                    ),
+                    Text(
+                      "Current Rating: ",
+                      style: new TextStyle(
+                        fontSize: 20
+                      )
+                    )
+                  ],
+                ),
+              ),
+            ),
+            new Card(
+              elevation: 5,
+              child: new Padding(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                child: new Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "Rating and Licenses",
+                      style: new TextStyle(
+                        fontSize: 19
+                      ),
+                    ),
+                    Divider(
+                      color: Colors.black87
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.max,
+                      
+                      children: <Widget>[
+                        Text(
+                          "Private License"
+                        ),
+                        Text(
+                          "Exipres in 35 days"
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            )
+          ],
+        )
+      )
     );
   }
 }

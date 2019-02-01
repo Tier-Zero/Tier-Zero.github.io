@@ -24,8 +24,17 @@ class HomePageState extends State<HomePage> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.lightBlueAccent,
-          title: new Text("LogbookZero", style: new TextStyle(color: Colors.white))
+          backgroundColor: new Color(0xFF00bcd4),
+          title: new Text("LogbookZero", style: new TextStyle(color: Colors.white)),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.exit_to_app),
+              tooltip: "Logout",
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            )
+          ],
         ),
         body: new Container(
           padding: new EdgeInsets.all(10.0),
@@ -38,13 +47,14 @@ class HomePageState extends State<HomePage> {
             BottomNavigationBarItem(icon: Icon(Icons.book), title: Text("Logbook")),
           ],
           currentIndex: _selectedIndex,
-          fixedColor: Colors.lightBlueAccent,
+          fixedColor: new Color(0xFF00bcd4),
           onTap: _itemTapped,
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () => print("pressed"),
           tooltip: 'Add New Log Item',
           child: Icon(Icons.add),
+          backgroundColor: new Color(0xFF00bcd4),
         ),
       ),
     );
