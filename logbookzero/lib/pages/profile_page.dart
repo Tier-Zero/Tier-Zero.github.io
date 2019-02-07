@@ -1,11 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart' as shared;
 
 class ProfilePage extends StatefulWidget {
   @override
   ProfilePageState createState() => ProfilePageState();
 }
 
+loadAsyncData() async {
+  final prefs = await shared.SharedPreferences.getInstance(); 
+
+  print(prefs.getString("CurrentUser"));
+}
+
+
 class ProfilePageState extends State<ProfilePage> {
+
+  @override
+  void initState() {
+    
+    loadAsyncData();
+  
+
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return new Material(

@@ -21,7 +21,17 @@ class CreateAccountUiState extends State<CreateAccountUi> {
                 padding: EdgeInsets.all(20),
                 child: new Column(
                   children: <Widget>[
-                    
+                    Text(
+                      "Create A New Account",
+                      style: new TextStyle(
+                        fontSize: 17,
+                        color: Colors.black87
+                      )
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 10),
+                    ),
+
                   ],
                 ),
               ),
