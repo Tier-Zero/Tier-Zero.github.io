@@ -1,6 +1,6 @@
 class User {
-  String Email;
-  String Pass;
-  String FirstName;
-  String LastName;
+  String email;
+  String pass;
+  String firstName;
+  String lastName;
 }
