@@ -4,12 +4,19 @@ import 'dart:convert';
 
 //import '../models/user_model.dart';
 
+class User {
+  String email;
+  String pass;
+  String firstName;
+  String lastName;
+}
+
 class CreateAccountUi extends StatefulWidget {
   @override
   CreateAccountUiState createState() => CreateAccountUiState();
 }
 
-createUser(User user) async {
+createUser(user) async {
   String baseUrl = "https://logbookzero.azurewebsites.net/api/User/";
 
   final response = await http.post(
@@ -18,15 +25,9 @@ createUser(User user) async {
       "Accept" : "application/json",
       "Content-Type" : "application/json"
     },
-    body: json.encode(user)
+    body: json.encode(user),
+    encoding: Encoding.getByName("utf-8")
   );
-}
-
-class User {
-  String email;
-  String pass;
-  String firstName;
-  String lastName;
 }
 
 class CreateAccountUiState extends State<CreateAccountUi> {
@@ -93,6 +94,7 @@ class CreateAccountUiState extends State<CreateAccountUi> {
                         hintText: "Create a Password"
                       ),
                       controller: passwordController,
+                      obscureText: true,
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 10),
@@ -133,12 +135,12 @@ class CreateAccountUiState extends State<CreateAccountUi> {
                             );
                           }
                         );
-                        User user = new User();
-                        
-                        user.email = emailController.text;
-                        user.pass = passwordController.text;
-                        user.firstName = firstNameController.text;
-                        user.lastName = lastNameController.text;
+                        Map<String, String> user = {
+                          'Email' : emailController.text.toString(),
+                          'FirstName' : firstNameController.text.toString(),
+                          'LastName' : lastNameController.text.toString(),
+                          'Pass' : passwordController.text.toString()
+                        };
                         await createUser(user);
                       },
                     )
